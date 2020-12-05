@@ -25,6 +25,8 @@
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
+
+              <!-- Starts dropdown menu -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
@@ -36,6 +38,9 @@
                   <a class="dropdown-item" href="wind.html">Wind Speed</a>
                 </div>
               </li>
+              <!-- Ends dropdown menu -->
+
+
               <li class="nav-item">
                 <a class="nav-link" href="data.html">Data</a>
               </li>
@@ -47,7 +52,24 @@
         </nav>
     </div>
 
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Weather Analysis Summary</h1>
+        <span class="border-bottom"></span>
+      </div>
+    </div>
 
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="Web_Visualizations\Resources\lat_v_temp.png" class="rounded float-left" alt="Latitude vs. Temperature">
+      </div>
+      <div class="col-md-6">
+        <p class="text-md-left">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      </div>
+    </div>
 
 
 
