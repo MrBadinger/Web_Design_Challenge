@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Weather Analysis: Comparison</title>
+  <link rel="stylesheet" type="text/css" href="Web_Visualizations/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="\Web_Visualizations/reset.css">
-  <link rel="stylesheet" href="\Web_Visualizations/style.css">
+  <link rel="stylesheet" type="text/css" href="Web_Visualizations/style.css">
 </head>
 
 <body>
@@ -47,6 +47,48 @@
         </nav>
     </div>
 
+
+    <!-- Header -->
+    <div class="col-md-12" id="indexheader">
+      <br>
+      <h1>Comparison: Latitude vs X</h1>
+      <span class="border-bottom"></span>
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+      <!-- Row 1 -->
+      <div class="col-md-6" id="comp_page_image">
+        <h4>vs. Cloudiness</h4>
+        <a href="clouds.html"><img src="Web_Visualizations\Resources\lat_v_cloud.png" id="comp_click_plot" class="rounded float-left" alt="Latitude vs. Cloudiness"></a>
+      </div>
+
+        <hr id="comp_hr">
+
+      <div class="col-md-6" id="comp_page_image">
+        <h4>vs. Humidity</h4>
+        <a href="humid.html"><img src="Web_Visualizations\Resources\lat_v_humid.png" id="comp_click_plot" class="rounded float-left" alt="Latitude vs. Humidity"></a>
+      </div>
+    </div>
+
+    <hr id="comp_hr">
+
+    <div class="row">
+      <!-- Row 2 -->
+      <div class="col-md-6" id="comp_page_image">
+        <h4>vs. Temperature</h4>
+        <a href="temp.html"><img src="Web_Visualizations\Resources\lat_v_temp.png" id="comp_click_plot" class="rounded float-left" alt="Latitude vs. Temperature"></a>
+      </div>
+
+      <hr id="comp_hr">
+
+      <div class="col-md-6" id="comp_page_image">
+        <h4>vs. Wind Speed</h4>
+        <a href="wind.html"><img src="Web_Visualizations\Resources\lat_v_wind.png" id="comp_click_plot" class="rounded float-left" alt="Latitude vs. Wind Speed"></a>
+      </div>
+    </div>
 
 
 

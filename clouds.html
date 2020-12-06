@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Weather Analysis: Cloudiness</title>
+  <link rel="stylesheet" type="text/css" href="Web_Visualizations/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="\Web_Visualizations/reset.css">
-  <link rel="stylesheet" href="\Web_Visualizations/style.css">
+  <link rel="stylesheet" type="text/css" href="Web_Visualizations/style.css">
 </head>
 
 <body>
   <div class="container">
+
+    <!-- Navagation Bar -->
     <div class="row">
       <div class="col-md-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,6 +27,8 @@
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
+
+              <!-- Starts dropdown menu -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
@@ -36,6 +40,9 @@
                   <a class="dropdown-item" href="wind.html">Wind Speed</a>
                 </div>
               </li>
+              <!-- Ends dropdown menu -->
+
+
               <li class="nav-item">
                 <a class="nav-link" href="data.html">Data</a>
               </li>
@@ -47,10 +54,41 @@
         </nav>
     </div>
 
+        <!-- Header -->
+      <div class="col-md-12" id="indexheader">
+        <br>
+        <h1>Latitude vs. Cloudiness</h1>
+        <span class="border-bottom"></span>
+      </div>
+
+
+    <hr>
+
+    <div class="row">
+      <!-- Summary Column -->
+      <div class="col-md-8" id="summary_page_image">
+        <img src="Web_Visualizations\Resources\lat_v_cloud.png" class="rounded float-left" id="summary_image" alt="Latitude vs. Temperature">
+        <p class="text-md-left">This scatter plot represents the level of cloud cover for the cities queried in relation to their latitude. Our scatter plot clearly shows that there is no correlation between latitude and cloudiness in our data sample. (Data collected on 10/25/2020)</p>
+       </div>
+
+      <!-- Visualization Column -->
+      <div class="col-md-4" id="index_visual_text">
+        <div class="visual_box">
+          <h1 id="visual_header">Visualizations</h1>
+
+          <span class="border-bottom"></span>
+            <a href="clouds.html"><img src="Web_Visualizations\Resources\lat_v_cloud.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Cloudiness"></a>
+            <a href="humid.html"><img src="Web_Visualizations\Resources\lat_v_humid.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Humidity"></a>
+            <a href="temp.html"><img src="Web_Visualizations\Resources\lat_v_temp.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Temperature"></a>
+            <a href="wind.html"><img src="Web_Visualizations\Resources\lat_v_wind.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Wind Speed"></a>
+            <span class="border-bottom"></span>
+         </div> 
 
 
 
 
+      </div>
+    </div>
 
 
 

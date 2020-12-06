@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Weather Analysis: Home</title>
+  <link rel="stylesheet" type="text/css" href="Web_Visualizations/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="\Web_Visualizations/reset.css">
-  <link rel="stylesheet" href="\Web_Visualizations/style.css">
+  <link rel="stylesheet" type="text/css" href="Web_Visualizations/style.css">
 </head>
 
 <body>
   <div class="container">
+
+    <!-- Navagation Bar -->
     <div class="row">
       <div class="col-md-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -52,27 +54,42 @@
         </nav>
     </div>
 
-    <div class="row">
-      <div class="col-md-12">
+        <!-- Header -->
+      <div class="col-md-12" id="indexheader">
+        <br>
         <h1>Weather Analysis Summary</h1>
         <span class="border-bottom"></span>
       </div>
-    </div>
+
 
     <hr>
 
     <div class="row">
-      <div class="col-md-6">
-        <img src="Web_Visualizations\Resources\lat_v_temp.png" class="rounded float-left" alt="Latitude vs. Temperature">
-      </div>
-      <div class="col-md-6">
+      <!-- Summary Column -->
+      <div class="col-md-8" id="summary_page_image">
+        <img src="Web_Visualizations\Resources\lat_v_temp.png" class="rounded float-left" id="summary_image" alt="Latitude vs. Temperature">
         <p class="text-md-left">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+        <p class="text-md-left">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      </div>
+
+      <!-- Visualization Column -->
+      <div class="col-md-4" id="index_visual_text">
+        <div class="visual_box">
+          <h1 id="visual_header">Visualizations</h1>
+
+          <span class="border-bottom"></span>
+            <a href="clouds.html"><img src="Web_Visualizations\Resources\lat_v_cloud.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Cloudiness"></a>
+            <a href="humid.html"><img src="Web_Visualizations\Resources\lat_v_humid.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Humidity"></a>
+            <a href="temp.html"><img src="Web_Visualizations\Resources\lat_v_temp.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Temperature"></a>
+            <a href="wind.html"><img src="Web_Visualizations\Resources\lat_v_wind.png" id="visual_click_plot" class="rounded float-left" alt="Latitude vs. Wind Speed"></a>
+            <span class="border-bottom"></span>
+         </div> 
+
+
+
+
       </div>
     </div>
-
-
-
 
 
 
