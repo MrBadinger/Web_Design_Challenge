@@ -83,6 +83,28 @@ tr:nth-child(even) {
 
 
 
+.navbar-expand-lg{
+  background-color: rgb(200, 209, 209) !important;
+
+}
+
+.navbar-collapse{
+  background-color: rgb(200, 209, 209);
+
+}
+.dropdown-item{
+  background-color: rgb(200, 220, 220);
+}
+
+.dropdown-menu {
+  background-color:  rgb(200, 220, 220);
+
+}
+
+
+
+
+
 /* ----------------------------- */
 /* This is for the Summary Field */
 .text-md-left { 
@@ -238,8 +260,23 @@ tr:nth-child(even) {
     height: auto;
   }
 
+  .navbar-expand-lg{
+    background-color: #5bc4cc !important;
 
+  }
 
+  .navbar-collapse{
+    background-color: #5bc4cc;
+
+  }
+  .dropdown-item{
+    background-color:  #6af5ff;
+  }
+
+  .dropdown-menu {
+    background-color:  #6af5ff;
+
+  }
 
 
 
